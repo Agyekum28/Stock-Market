@@ -70,7 +70,7 @@ def get_stock_insights(ticker):
 # ------------------------------
 # Streamlit UI
 # ------------------------------
-st.title("📊 Hottest Stock Tickers of the Week")
+st.title("📊 Stock Market Analyzer")
 st.subheader("Tracking Top 3 Trending Stocks This Week 📈")
 st.divider()
 
@@ -94,4 +94,5 @@ if st.button("Get Top 3 Trending Tickers This Week"):
                 st.markdown(insights, unsafe_allow_html=True)
 
 st.divider()
+
 
