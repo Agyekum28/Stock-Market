@@ -21,7 +21,7 @@ set_llm_cache(InMemoryCache())
 
 llm = ChatGroq(
     model="llama-3.3-70b-versatile",
-    temperature=0.2,
+    temperature=0.01,
     max_retries=3,
     timeout=120
 )
@@ -94,3 +94,4 @@ if st.button("Get Top 3 Trending Tickers This Week"):
                 st.markdown(insights, unsafe_allow_html=True)
 
 st.divider()
+
